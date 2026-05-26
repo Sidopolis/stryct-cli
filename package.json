@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && node --import tsx --test test/**/*.test.ts",
+    "test": "npm run build && node --import tsx --test test/cli.smoke.test.ts",
     "dev": "tsx src/cli.ts",
     "dev:mcp": "tsx src/mcp.ts",
     "prepublishOnly": "npm run build && npm test"

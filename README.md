@@ -56,7 +56,7 @@ There is **no** `stryct install` command. **`init`** scaffolds your app.
 |------|--------|
 | Commander CLI + `--help` | Yes — same pattern as typical OSS CLIs |
 | npm publish / `npx stryct` | Not yet — use `npm link` locally |
-| Automated tests | Not yet |
+| Automated tests | Yes (`npm test`, GitHub Actions) |
 | `align` | Regex-based, not full AST |
 | `export` | Writes snippet files; does not patch `tailwind.config.js` automatically |
 | `sync` | Overwrites rule files (no merge) |

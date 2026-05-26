@@ -14,7 +14,7 @@ Stryct uses **two separate GitHub repos** on purpose. Do not merge them into one
 
 ┌─────────────────────────────────────────────────────────────┐
 │  Repo 2: stryct-cli (tool)                                  │
-│  GitHub: github.com/Sidopolis/stryct-cli  ← create & push   │
+│  GitHub: github.com/Sidopolis/stryct-cli                    │
 │  Folder on your PC: Downloads/stryct-cli                    │
 │  What it is: npm package `stryct` — init, sync, lint, MCP   │
 │  You run: stryct init inside *your app*, not in this folder │

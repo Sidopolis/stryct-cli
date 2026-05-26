@@ -1,0 +1,53 @@
+{
+  "name": "stryct",
+  "version": "0.1.0",
+  "description": "Agent control plane for frontend repos — init, sync, lint, and token exports",
+  "type": "module",
+  "author": "D Sidhant Patro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sidopolis/stryct-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sidopolis/stryct-cli/issues"
+  },
+  "homepage": "https://github.com/Sidopolis/stryct",
+  "bin": {
+    "stryct": "./dist/cli.js",
+    "stryct-mcp": "./dist/mcp.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --import tsx --test test/**/*.test.ts",
+    "dev": "tsx src/cli.ts",
+    "dev:mcp": "tsx src/mcp.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "cli",
+    "design-tokens",
+    "ai",
+    "cursor",
+    "frontend",
+    "mcp"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.0",
+    "commander": "^14.0.3",
+    "jiti": "^2.7.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
